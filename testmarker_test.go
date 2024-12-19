@@ -10,13 +10,13 @@ func TestMarkerString(t *testing.T) {
 	}{
 		{
 			name: "Case 1",
-			m:    Marker{caseName: "Case 1", File: "testmarker_test.go", Line: 1},
-			want: "Case 1(testmarker_test.go:1)",
+			m:    Mark("Case 1"),
+			want: "Case 1(testmarker_test.go:13)",
 		},
 		{
 			name: "Case 2",
-			m:    Marker{caseName: "Case 2", File: "testmarker_test.go", Line: 2},
-			want: "Case 2(testmarker_test.go:2)",
+			m:    Mark("Case 2"),
+			want: "Case 2(testmarker_test.go:18)",
 		},
 	}
 	for _, tt := range tests {

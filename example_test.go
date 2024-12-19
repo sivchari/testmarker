@@ -13,12 +13,12 @@ func ExampleMarker() {
 		want int
 	}{
 		{
-			name: Mark(t, "Case 1"),
+			name: Mark("Case 1"),
 			arg:  1,
 			want: 1,
 		},
 		{
-			name: Mark(t, "Case 2"),
+			name: Mark("Case 2"),
 			arg:  2,
 			want: 3,
 		},
